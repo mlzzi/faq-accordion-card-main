@@ -1,28 +1,40 @@
 :root {
-  /* Primary colors */
   /*Text*/
   --veryDarkDesaturatedBlue: hsl(238, 29%, 16%);
   --softRed: hsl(14, 88%, 65%);
-
-  /*Background gradient:*/
-  --softViolet: hsl(273, 75%, 66%);
-  --softBlue: hsl(240, 73%, 65%);
-
-  /*Neutral Colors*/
-  /*Text*/
   --veryDarkGrayishBlue: hsl(237, 12%, 33%);
   --darkGrayishBlue: hsl(240, 6%, 50%);
 
+  /*Background gradient*/
+  --softViolet: hsl(273, 75%, 66%);
+  --softBlue: hsl(240, 73%, 65%);
+
   /*Dividers*/
   --lightGrayishBlue: hsl(240, 5%, 91%);
+
+  /*Font*/
+  --kumbh: 'Kumbh Sans', sans-serif;
 }
 
 html {
   font-size: 12px;
+  background: linear-gradient(0deg, var(--softBlue) 0%, var(--softViolet) 100%);
+  min-height: 100vh;
 }
 
 body {
-  background: linear-gradient(0deg, var(--softBlue) 0%, var(--softViolet) 100%);
-  min-height: 100vh;
-  
+
+  font-family: var(--kumbh);
+}
+
+.attribution {
+  text-align: center;
+  padding-bottom: 4vw;
+  color: white;
+  font-size: 3.5vw;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: var(--veryDarkDesaturatedBlue);
 }
