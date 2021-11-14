@@ -25,7 +25,6 @@
 
   .woman__desktop, .shadow__desktop, .box {
     display: flex;
-
   }
 
   .woman__desktop {
@@ -43,6 +42,5 @@
     width: 200px;
     position: absolute;
     transform: translate(-95px, 215px);
-    
   }
 }

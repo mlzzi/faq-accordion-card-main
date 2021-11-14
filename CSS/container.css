@@ -1,6 +1,7 @@
 .container {
   background-color: white;
   border-radius: 5vw;  
+  box-shadow: 1px 30px 40px -20px rgb(29, 30, 53, 0.6);
   display: flex;
   flex-direction: column;
   margin: 38vw auto 20vw auto;
@@ -12,13 +13,11 @@
   .container {
     border-radius: 20px;
     flex-direction: row;
-    margin: 120px auto;
+    margin: 180px auto;
     max-height: 700px;
     min-height: 510px;
     overflow: hidden;
     padding: 0;
     width: 930px;
   }
-
-
 }

@@ -17,26 +17,25 @@
 }
 
 html {
-  font-size: 12px;
   background: linear-gradient(0deg, var(--softBlue) 0%, var(--softViolet) 100%);
+  font-size: 12px;
   min-height: 100vh;
 }
 
 body {
-
   font-family: var(--kumbh);
 }
 
 .attribution {
-  text-align: center;
-  padding-bottom: 4vw;
   color: white;
   font-size: 3.5vw;
+  padding-bottom: 4vw;
+  text-align: center;
 }
 
 .attribution a {
-  text-decoration: none;
   color: var(--veryDarkDesaturatedBlue);
+  text-decoration: none;
 }
 
 @media screen and (min-width: 1024px) {

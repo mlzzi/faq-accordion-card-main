@@ -21,6 +21,11 @@
   display: flex;
   justify-content: space-between;
   padding: 1vw 0;
+  cursor: pointer;
+}
+
+.accordion__question:hover {
+  color: var(--softRed);
 }
 
 .accordion.active .accordion__question {
@@ -74,12 +79,10 @@
     font-size: 2.5rem;
     margin-top: 60px;
     text-align: left;
-    
   }
   
   .accordion__question {
     padding: .2rem;
-    
   }
   
   .accordion__question img {
@@ -89,7 +92,6 @@
   .accordion__answer {
     font-size: 1.1rem;
     line-height: 1.5rem;
-
   }
   
   .accordion.active .accordion__answer {
@@ -97,5 +99,4 @@
     flex-direction: column;
     justify-content: start;
   }
-
 }
