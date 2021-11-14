@@ -1,9 +1,24 @@
 .container {
   background-color: white;
-  width: 85vw;
+  border-radius: 5vw;  
   display: flex;
   flex-direction: column;
   margin: 38vw auto 20vw auto;
-  border-radius: 5vw;  
   padding-bottom: 6vw;
+  width: 85vw;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    border-radius: 20px;
+    flex-direction: row;
+    margin: 120px auto;
+    max-height: 700px;
+    min-height: 510px;
+    overflow: hidden;
+    padding: 0;
+    width: 930px;
+  }
+
+
 }

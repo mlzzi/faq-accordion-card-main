@@ -1,25 +1,25 @@
 .faq {
   display: flex;
+  color: var(--veryDarkGrayishBlue);
   flex-direction: column;
+  font-size: 3.5vw;
   justify-content: center;
   padding: 6vw;
-  font-size: 3.5vw;
-  color: var(--veryDarkGrayishBlue);
   text-align: left;
 }
 
 .faq h1 {
+  color: var(--veryDarkDesaturatedBlue);
   font-size: 8vw;
   margin: 2.5vw 0;
-  color: var(--veryDarkDesaturatedBlue);
   text-align: center;
 }
 
 .accordion__question {
+  align-items: baseline;
   border-bottom: 1px solid var(--lightGrayishBlue);
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
   padding: 1vw 0;
 }
 
@@ -42,11 +42,11 @@
 }
 
 .accordion__answer {
+  color: var(--darkGrayishBlue);
+  border-bottom: 1px solid var(--lightGrayishBlue);
+  display: none;
   font-size: 3vw;
   line-height: 5.5vw;
-  color: var(--darkGrayishBlue);
-  display: none;
-  border-bottom: 1px solid var(--lightGrayishBlue);
 }
 
 .accordion.active .accordion__answer {
@@ -55,4 +55,47 @@
 
 .accordion.active .accordion__answer h1 {
   color: var(--veryDarkDesaturatedBlue);
+}
+
+@media screen and (min-width: 1024px) {
+  
+  .faq {
+    font-size: 1.2rem;
+    padding: 0;
+    padding-right: 8rem;
+    text-align: left;
+    max-width: 410px;
+    min-width: 380px;
+    position: relative;
+    justify-content: flex-start;
+  }
+  
+  .faq h1 {
+    font-size: 2.5rem;
+    margin-top: 60px;
+    text-align: left;
+    
+  }
+  
+  .accordion__question {
+    padding: .2rem;
+    
+  }
+  
+  .accordion__question img {
+    height: .7rem;
+  }
+  
+  .accordion__answer {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+
+  }
+  
+  .accordion.active .accordion__answer {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+
 }

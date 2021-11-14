@@ -38,3 +38,10 @@ body {
   text-decoration: none;
   color: var(--veryDarkDesaturatedBlue);
 }
+
+@media screen and (min-width: 1024px) {
+  .attribution {
+    font-size: 1.25rem;
+    padding-bottom: 0;
+  } 
+}

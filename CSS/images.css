@@ -1,9 +1,48 @@
 .images {
-  width: 65vw;
   margin: -30vw auto 0 auto;
+  width: 65vw;
 }
 
-.shadow {
+.shadow__mobile {
   margin-top: -20vw;
   width: 65vw;
+}
+
+.woman__desktop, .shadow__desktop, .box {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+
+  .images {
+    position: relative;
+    margin: 100px auto 0 auto;
+  }
+
+  .woman__mobile, .shadow__mobile {
+    display: none;
+  }
+
+  .woman__desktop, .shadow__desktop, .box {
+    display: flex;
+
+  }
+
+  .woman__desktop {
+    position: absolute;
+    transform: translate(-80px, -15px);
+  }
+
+  .shadow__desktop {
+    position: absolute;
+    transform: translate(-635px, -400px);
+    width: 1000px;
+  }
+
+  .box {
+    width: 200px;
+    position: absolute;
+    transform: translate(-95px, 215px);
+    
+  }
 }
